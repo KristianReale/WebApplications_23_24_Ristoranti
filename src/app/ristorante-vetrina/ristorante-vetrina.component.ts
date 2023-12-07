@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Ristorante } from '../model/ristorante';
 
 @Component({
@@ -7,5 +7,5 @@ import { Ristorante } from '../model/ristorante';
   styleUrls: ['./ristorante-vetrina.component.css']
 })
 export class RistoranteVetrinaComponent {
-  ristorante?:Ristorante;
+  @Input()ristorante?:Ristorante;
 }
