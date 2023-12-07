@@ -7,6 +7,8 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { ChiSiamoComponent } from './chi-siamo/chi-siamo.component';
+import { RistoranteVetrinaComponent } from './ristorante-vetrina/ristorante-vetrina.component';
+import { SezioneRistoranteVetrinaComponent } from './sezione-ristorante-vetrina/sezione-ristorante-vetrina.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { ChiSiamoComponent } from './chi-siamo/chi-siamo.component';
     FooterComponent,
     HeaderComponent,
     HomeComponent,
-    ChiSiamoComponent
+    ChiSiamoComponent,
+    RistoranteVetrinaComponent,
+    SezioneRistoranteVetrinaComponent
   ],
   imports: [
     BrowserModule,
