@@ -10,6 +10,8 @@ import { ChiSiamoComponent } from './chi-siamo/chi-siamo.component';
 import { RistoranteVetrinaComponent } from './ristorante-vetrina/ristorante-vetrina.component';
 import { SezioneRistoranteVetrinaComponent } from './sezione-ristorante-vetrina/sezione-ristorante-vetrina.component';
 import { NgFor } from '@angular/common';
+import { RistorantiServiceService } from './ristoranti-service.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,9 +26,10 @@ import { NgFor } from '@angular/common';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     NgFor
   ],
-  providers: [],
+  providers: [RistorantiServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
