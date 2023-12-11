@@ -9,9 +9,11 @@ import { HomeComponent } from './home/home.component';
 import { ChiSiamoComponent } from './chi-siamo/chi-siamo.component';
 import { RistoranteVetrinaComponent } from './ristorante-vetrina/ristorante-vetrina.component';
 import { SezioneRistoranteVetrinaComponent } from './sezione-ristorante-vetrina/sezione-ristorante-vetrina.component';
-import { NgFor } from '@angular/common';
+import { CommonModule, NgFor } from '@angular/common';
 import { RistorantiServiceService } from './ristoranti-service.service';
 import { HttpClientModule } from '@angular/common/http';
+import { LoginComponent } from './login/login.component';
+import {FormBuilder, FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,13 +23,17 @@ import { HttpClientModule } from '@angular/common/http';
     HomeComponent,
     ChiSiamoComponent,
     RistoranteVetrinaComponent,
-    SezioneRistoranteVetrinaComponent
+    SezioneRistoranteVetrinaComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    NgFor
+    NgFor,
+    FormsModule,
+    CommonModule,
+    ReactiveFormsModule
   ],
   providers: [RistorantiServiceService],
   bootstrap: [AppComponent]
