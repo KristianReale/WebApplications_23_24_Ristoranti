@@ -15,7 +15,7 @@ export class LoginComponent {
 
   faiLogin(){
     var user = this.username.value;
-    var pass = this.password.value;
+    var pass = this.password.value;    
 
     this.auth.login(user, pass);
   }
