@@ -43,12 +43,12 @@ export class AuthServiceService {
   }
 
   isAuthenticated(){
-    return this.token != undefined;
+    return this.getToken() != undefined;
   }
 
   login(username:string, password:string){
     var utente:Utente = {"username": username, "password": password};
-    this.http.post<AuthToken>(this.backendUrl + "/login",utente)
+    this.http.post<AuthToken>(this.backendUrl + "/login",utente,{withCredentials: true})
     .subscribe(response => {
       this.setToken(response.token);
       this.router.navigate(["/"]);

@@ -14,6 +14,7 @@ import { RistorantiServiceService } from './ristoranti-service.service';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './login/login.component';
 import {FormBuilder, FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { RecensioniComponent } from './recensioni/recensioni.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {FormBuilder, FormsModule, ReactiveFormsModule} from '@angular/forms';
     ChiSiamoComponent,
     RistoranteVetrinaComponent,
     SezioneRistoranteVetrinaComponent,
-    LoginComponent
+    LoginComponent,
+    RecensioniComponent
   ],
   imports: [
     BrowserModule,

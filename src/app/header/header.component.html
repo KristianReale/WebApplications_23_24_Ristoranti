@@ -15,6 +15,12 @@
                 </a>
             </li>
             <li><a href="http://localhost:8080/ristoranti/dammiRistoranti">Ristoranti</a></li>
+            <li *ngIf="isAuthenticated()">
+                <a routerLink="/recensioni">
+                    Recensioni
+                </a>
+            </li>
+            
             <!-- if -->
 
             <li *ngIf="!isAuthenticated()">

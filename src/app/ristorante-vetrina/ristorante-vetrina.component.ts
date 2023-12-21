@@ -1,6 +1,8 @@
 import { Component, Input } from '@angular/core';
 import { Ristorante } from '../model/ristorante';
 
+declare function jsonFlickrApi():void;
+
 @Component({
   selector: 'app-ristorante-vetrina',
   templateUrl: './ristorante-vetrina.component.html',
@@ -8,4 +10,9 @@ import { Ristorante } from '../model/ristorante';
 })
 export class RistoranteVetrinaComponent {
   @Input()ristorante?:Ristorante;
+  farmid?:string;
+  serverid?:string
+  id?:string;
+  secret?:string;
+  
 }
